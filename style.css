@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(background.jpg) no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+.content h1 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 600%;
+    font-weight: normal;
+    color: white;
+    line-height: 70%;
+}
+
+.btn {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 600;
+    font-size: 200%;
+    letter-spacing: 0.050em;
+    color: #666666;
+    text-decoration: none;
+    border: 2px solid #666666;
+    background-color: white;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    color: white;
+    border: 2px solid #666666;
+    background-color: #666666 ;
+}
+
+body {
+    background-color:  #666666;
+}
+
+img {
+    width: 100%;
+}
+
+.portfolio h3 {
+    font-size: 1.875em;
+    padding: 0 0 1% 0;
+    color: white;
+    font-weight: 800;
+    letter-spacing: .03em;
+}
+
+.portfolio .main {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 400%;
+    font-weight: normal;
+    color: white;
+}
+
+.portfolio {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.work {
+    height: auto;
+    padding: 2% 0;
+}
+
+.work h3 {
+    margin: auto auto;
+    padding: 4% 0;
+}
+
+.text-box {
+    float: left;
+    text-align: left;
+    width: 480px;
+    background-color: #666666;
+    height: auto;
+}
+
+.text-box-content {
+    margin: auto;
+    padding: 4% 8%;
+}
+
+.text-box-content p {
+    line-height: 1.8;
+    color: white;
+    letter-spacing: .03em;
+    font-size: 1em;
+}
+
+.image-area {
+    width: 480px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float:right;
+}
+
+footer {
+    background-color: #077f35;
+    color: white;
+    padding: 2% 0;
+    width: 100%;
+    clear: both;
+    height: 75px;
+}
+
+.footer-content {
+    max-width: 960px;
+    padding: 0 0;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    color: white;
+    letter-spacing: .03em;
+    font-size: 1em;
+}
+
+.credit {
+    float:left;
+
+}
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+    .content h1 {
+        font-size: 550%;
+    }
+    .btn {
+        font-size: 175%;
+        padding: 9px 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 475%;
+    }
+    .btn {
+        font-size: 150%;
+        padding: 7px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 400%;
+    }
+    .btn {
+        font-size: 120%;
+        padding: 6px 14px;
+    }
+}

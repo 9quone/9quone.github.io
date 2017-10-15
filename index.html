@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+	<title>Abhi Arya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="css/animate.css" rel="stylesheet"/>
+	<link href="css/waypoints.css" rel="stylesheet"/>
+	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.js" type="text/javascript"></script>
+</head>
+<body>
+	<section class="intro">
+		<div class="inner">
+			<div class="content">
+				<section class="os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0.5s">
+					<h1>Abhi Arya</h1>
+				</section>
+				<section class="os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0.7s">
+					<a class="btn" href="#portfolio">Portfolio</a>
+				</section>
+			</div>
+		</div>
+	</section>
+
+	<div class="portfolio" id="portfolio">
+		<h3 class="main">Portfolio</h3>
+
+		<section class="work">
+			<div class="image-area left">
+				<img src="images/nps.jpeg" alt="Naval Postgraduate School"/>
+			</div>
+			<div class="text-box">
+				<div class="text-box-content">
+					<h3>Computational Research Intern</h3>
+					<p>Created a MapReduce algorithm that runs on a Red Hat Linux distributed file system to parallel process megabytes of binary event logs (.evtx) across a netowrk of Hadoop DataNodes. Helps identify network patterns and anomalies correlating to certain Event IDs to pinpoint cybersecurity threats to the Naval network. Work to be published in the Navy IT Magazine.</p>
+				</div>
+			</div>
+		</section>
+
+		<p>&nbsp;</p>
+
+		<section class="work">
+			<div class="image-area right">
+				<img src="images/qolsys.png" alt="Qolsys"/>
+			</div>
+			<div class="text-box">
+				<div class="text-box-content">
+					<h3>Software Development Intern</h3>
+					<p>Designed a software application in Java for Z wave technology that monitors data measurements retrieved from sensors onboard the Qolsys IQ Panel 2. Created a software tool that analyzes Tx Linearizer (transmission power in dBm) and LNA Offset (low-noise electronic amplifier) radio measurements of 6 LTE bands to ensure the radio devices complied with industry standards.</p>
+				</div>
+			</div>
+		</section>
+
+		<p>&nbsp;</p>
+
+		<section class="work">
+			<div class="image-area left">
+				<img src="images/kc.png" alt="Kitchen Connection"/>
+			</div>
+			<div class="text-box">
+				<div class="text-box-content">
+					<h3>Code Alliance Mobile Developer</h3>
+					<p>Creating an Android mobile application in Java/XML to function as a platform for chefs to host interactive online culinary classes. Integrating the application with DigitalOcean and AWS for user authentication and data storage. Utilizing the TokBox API to support video streaming and live chat features.</p>
+				</div>
+			</div>
+		</section>
+
+		<p>&nbsp;</p>
+
+		<section class="work">
+			<div class="image-area right">
+				<img src="images/benetech.jpg" alt="Benetech"/>
+			</div>
+			<div class="text-box">
+				<div class="text-box-content">
+					<h3>Website Analytics Intern</h3>
+					<p>Managed and analyzed usage of Bookshare.org, an accessible online library for people with print disabilities with 400K+ users. Enhanced internal database by replacing outdated EPUB files and updating title metadata. Gathered and interpreted website analytics data to improve UI/UX. Leveraged usage data to demonstrate website shortcomings in a corporate meeting including the CEO of Benetech.</p>
+				</div>
+			</div>
+		</section>
+
+		<p>&nbsp;</p>
+
+		<section class="work">
+			<div class="image-area left">
+				<img src="images/grubclub.jpg" alt="Grub Club App"/>
+			</div>
+			<div class="text-box">
+				<div class="text-box-content">
+					<h3>Grub Club iOS App</h3>
+					<p>Grub Club is an iOS application built in Swift that employs geolocation and artificial intelligence to suggest restaurants to eat at with a group of friends. Incorporates Google Places API for location and restaruant data and AI algorithms for restaurant suggestions. Winner at HackMerced2017F (National Collegiate Hackathon).</p>
+				</div>
+			</div>
+		</section>
+
+		<p>&nbsp;</p>
+
+	</div>
+
+	<footer>
+		<div class="footer-content">
+			<p class="credit">&copy; Copyright 2017 Abhinav Arya.<br>Designed in HTML/CSS</p>
+		</div>
+	</footer>
+
+	<script>
+		$(document).ready(function(){
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+			
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+				} // End if
+			});
+		});
+	</script>
+</body>
+</html>
