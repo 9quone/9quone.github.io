@@ -1,2 +1,2 @@
 # 9quone.github.io
-My personal website! Please visit http://abhiarya.me/
+Personal website, completely designed by me! Please visit http://abhiarya.me/
