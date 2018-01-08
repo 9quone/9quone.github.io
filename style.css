@@ -191,3 +191,13 @@ footer {
         padding: 6px 14px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .content h1 {
+        font-size: 350%;
+    }
+    .btn {
+        font-size: 100%;
+        padding: 5px 12px;
+    }
+}
