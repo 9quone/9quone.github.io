@@ -2,10 +2,12 @@
 <head>
 	<title>Abhi Arya</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<meta name="google-site-verification" content="qxjMagfXjtWr4ykador0oKBxwzVf6c-AwVB8GMPT8bQ" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<link href="css/animate.css" rel="stylesheet"/>
 	<link href="css/waypoints.css" rel="stylesheet"/>
 	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
@@ -49,7 +51,7 @@
 			<div class="text-box">
 				<div class="text-box-content">
 					<h3>Software Development Intern</h3>
-					<p>Designed a software application in Java for Z wave technology that monitors data measurements retrieved from sensors onboard the Qolsys IQ Panel 2. Created a software tool that analyzes Tx Linearizer (transmission power in dBm) and LNA Offset (low-noise electronic amplifier) radio measurements of 6 LTE bands to ensure the radio devices complied with industry standards.</p>
+					<p>Developed a software application in Java for Z wave technology that monitors data measurements retrieved from sensors onboard the Qolsys IQ Panel 2. Created a software tool that analyzes Tx Linearizer (transmission power in dBm) and LNA Offset (low-noise electronic amplifier) measurements of 6 LTE bands to ensure radio devices complied with industry standards.</p>
 				</div>
 			</div>
 		</section>
@@ -63,7 +65,7 @@
 			<div class="text-box">
 				<div class="text-box-content">
 					<h3>Code Alliance Mobile Developer</h3>
-					<p>Creating an Android mobile application in Java/XML to function as a platform for chefs to host interactive online culinary classes. Integrating the application with DigitalOcean and AWS for user authentication and data storage. Utilizing the TokBox API to support video streaming and live chat features.</p>
+					<p>Building an Android mobile application in Java/XML to function as a platform for chefs to host interactive online culinary classes. Integrating the application with DigitalOcean and AWS for user authentication and data storage. Utilizing the TokBox API to support video streaming and live chat features.</p>
 				</div>
 			</div>
 		</section>
@@ -102,33 +104,22 @@
 
 	<footer>
 		<div class="footer-content">
-			<p class="credit">&copy; Copyright 2017 Abhinav Arya.<br>Designed in HTML/CSS</p>
+			<p class="credit">&copy; Copyright 2017<br>Designed by Abhinav Arya.</p>
 		</div>
 	</footer>
 
 	<script>
 		$(document).ready(function(){
-			// Add smooth scrolling to all links
 			$("a").on('click', function(event) {
-
-				// Make sure this.hash has a value before overriding default behavior
 				if (this.hash !== "") {
-				// Prevent default anchor click behavior
-				event.preventDefault();
-
-				// Store hash
-				var hash = this.hash;
-
-				// Using jQuery's animate() method to add smooth page scroll
-				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 800, function(){
-			
-					// Add hash (#) to URL when done scrolling (default click behavior)
-					window.location.hash = hash;
-				});
-				} // End if
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+					//window.location.hash = hash;
+					});
+				}
 			});
 		});
 	</script>
